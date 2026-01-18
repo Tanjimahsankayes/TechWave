@@ -22,6 +22,8 @@ body {
     font-size: 44px;
     font-weight: bold;
     text-align: center;
+    padding-top: 60px;
+    padding-bottom: 20px;
 }
 
 .card-heading{
@@ -33,7 +35,7 @@ body {
 .card-bg{
     border-radius: 20px;
     background-color: #250D44;
-    padding: 10px;
+    padding: 14px;
 }
 
 .width {
@@ -59,6 +61,17 @@ body {
     padding: 40px;
     border-radius: 40px;
     width: 100%;
+}
+
+.social-icon{
+    display: flex;
+    gap: 10px ;
+}
+
+.social-icon .icons{
+    border: 1px #533C72 solid;
+    padding: 10px;
+    border-radius: 50px;
 }
 
 @media screen and (max-width: 576px) {
