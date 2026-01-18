@@ -10,7 +10,7 @@ body {
 }
 
 .paragraph {
-    color:#fff;
+    color: #fff;
     font-family: Inter;
     font-style: Regular;
     font-size: 14px;
@@ -18,7 +18,7 @@ body {
     opacity: 0.6;
 }
 
-.section-title{
+.section-title {
     font-size: 44px;
     font-weight: bold;
     text-align: center;
@@ -26,13 +26,13 @@ body {
     padding-bottom: 20px;
 }
 
-.card-heading{
+.card-heading {
     font-size: 22px;
     font-weight: bold;
-    padding: 16px 0 ;
+    padding: 16px 0;
 }
 
-.card-bg{
+.card-bg {
     border-radius: 20px;
     background-color: #250D44;
     padding: 14px;
@@ -63,22 +63,53 @@ body {
     width: 100%;
 }
 
-.social-icon{
+.host-container {
     display: flex;
-    gap: 10px ;
+    gap: 10px;
 }
 
-.social-icon .icons{
+.social-icon {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icon .icons {
     border: 1px #533C72 solid;
     padding: 10px;
     border-radius: 50px;
 }
 
+.footer{
+    background-image: url(../assets/footer-bg.png);
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-size: 100%;
+}
+
+.footer .social-link{
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    padding: 25px;
+}
+
+.footer .social-link img{
+    height: 20px;
+    width: 20px;
+}
+
 @media screen and (max-width: 576px) {
-    .card-choose{
+
+    .card-choose,
+    .iframe-card {
         grid-template-columns: 1fr;
     }
-    .iframe-card{
-        grid-template-columns: 1fr;
+
+    .host-container {
+        flex-direction: column;
+        text-align: center;
     }
 }
