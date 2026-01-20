@@ -79,13 +79,65 @@ nav .nav-list li a {
 
 /* header section design  */
 
+#banner {
+    background-image: url(../assets/hero-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+}
+
+.circle-bg {
+    position: relative;
+    /* top: 100%; */
+    left: 37%;
+    transform: translate(-0%, 10%);
+}
+
+.microphone-img {
+    position: inherit;
+    left: 37%;
+    transform: translate(-28%, -125%);
+}
+
+
 .hero-img {
     position: relative;
 }
 
+.new-btn {
+    position: inherit;
+    color: black;
+    background-color: #00FF88;
+    border: none;
+    border-radius: 8px;
+    padding: 5px 14px;
+    transform: translate(258%, -670%);
+}
 
+.header-text {
+    position: inherit;
+    text-align: center;
+    transform: translate(8%, -80%);
+    right: 560px;
+}
 
+.header-text h1 {
+    font-size: 60px;
+    font-weight: bolder;
+}
 
+.header-text p {
+    opacity: 0.7;
+}
+
+.header-text div {
+    position: inherit;
+    left: 440px;
+    top: 40px;
+}
 
 .card {
     background-color: #351165;
@@ -209,6 +261,35 @@ nav .nav-list li a {
 
     /* header section responsive  */
 
+    #banner {
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+    }
+
+    .circle-bg {
+        width: 200px;
+        transform: translate(-20%, 5%);
+    }
+
+    .microphone-img {
+        width: 46px;
+        transform: translate(-0%, -135%);
+    }
+
+    .new-btn {
+        transform: translate(120%, -340%);
+    }
+
+    /* .new-btn {
+        padding: 5px 14px;
+        transform: translate(258%, -670%);
+    } */
+
+    .header-text div{
+        gap: 5px;
+    }
+
 
     /* card section  */
     .card-choose {
@@ -224,20 +305,22 @@ nav .nav-list li a {
     .iframe-card .card-bg iframe {
         width: 380px;
         height: 200px;
-        
+
     }
 
 
     /* host section  */
-    .host-section{
+    .host-section {
         padding: 30px;
     }
-    .host-container{
+
+    .host-container {
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
-    .social-icon{
+
+    .social-icon {
         justify-content: center;
     }
 
@@ -247,9 +330,11 @@ nav .nav-list li a {
         min-height: 45vh;
         padding-top: 10px;
     }
-    .footer .section-title{
+
+    .footer .section-title {
         padding: 14px;
     }
+
     .footer .social-link {
         padding: 5px;
         gap: 10px;
