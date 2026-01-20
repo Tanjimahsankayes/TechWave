@@ -44,29 +44,52 @@
         </nav>
         <hr class="border-[#412567]">
         
-        <div id="banner" class="">
+        <!-- <div id="banner">
             <div class="hero-img">
                 <div class="circle-bg">
                     <img src="./assets/hero-circle.png" alt="">
                     <div class="microphone-img">
                         <img src="./assets/microphone.png" alt="">
                         <div class="new-button">
-                            <button class="new-btn"> New </button>
-                            
+                            <button class="new-btn"> New </button>                           
                         </div>
                     </div>
                     <div class="header-text">
                         <h1>TechWave</h1>
                         <p >Your daily dose of tech insights, productivity hacks, and personal growth</p>
-                        <div class="flex gap-10">
-                            <button class=" flex items-center gap-3 px-6 rounded-full bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600 text-white text-[16px] font-semibold cursor-pointer shadow-lg hover:scale-105 transition-all duration-300 h-12"> <img src="./assets/spotify.png" alt="">Listen on Spotify</button>
-                            <button class=" flex items-center gap-3 px-6 rounded-full border border-[#00FF88] text-[16px] font-semibold cursor-pointer shadow-lg hover:scale-105 transition-all duration-300 h-12"> <img src="./assets/message.png" alt="">Subscribe</button>
+                        <div class="grid grid-cols-2 header-btn">
+                            <button class="bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600 dow-lg hover:scale-105 transition-all duration-300"> <img src="./assets/spotify.png" alt="">Listen on Spotify</button>
+                            <button class=" border border-[#00FF88] shadow-lg hover:scale-105 transition-all duration-300"> <img src="./assets/message.png" alt="">Subscribe</button>
                         </div>
                     </div>
                 </div>
             </div>
             
-        </div>         
+        </div>   -->
+        
+        <section class="banner">
+            <div id="banner">
+                <div class="banner-container common-w">
+                    <div class="banner-circle">
+                        <img src="assets/hero-circle.png" alt="circle">
+                        <div class="banner-microphone">
+                            <img src="assets/microphone.png" alt="microphone">
+                        </div>
+                        <div class="banner-badge">
+                            <p>NEW</p>
+                        </div>
+                    </div>
+                    <h1 class="banner-title">TechWave</h1>
+                    <p class="banner-des">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+                    <div class="banner-button">
+                        <button class="btn-primary bg-gradient-to-r rounded-[100px] px-6 from-yellow-400 via-pink-500 to-purple-600 dow-lg hover:scale-105 transition-all duration-300"><i class="fa-brands fa-spotify"></i> Listen on Spotify</button>
+                        <button class="btn-secondary"><i class="fa-regular fa-envelope"></i> Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
     </header>
 
 
@@ -152,7 +175,7 @@
             <div class="pb-10 featured-section">
                 <h1 class="section-title">Featured Episodes</h1>
 
-                <div class="iframe-card flex gap-10">
+                <div class="iframe-card">
                     <div class="card-bg">
                         <iframe class="rounded-xl"
                             src="https://www.youtube.com/embed/xb-fcoMMiTM?si=ktQ1ABWf4uBkdxKT"

@@ -9,11 +9,6 @@ body {
     color: white;
 }
 
-
-
-
-
-
 /* shared style here  */
 
 
@@ -76,68 +71,108 @@ nav .nav-list li a {
     display: flex;
 }
 
-
-/* header section design  */
-
+/* banner section  */
 #banner {
     background-image: url(../assets/hero-bg.png);
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
     position: relative;
+    border-top: 2px solid rgba(255, 255, 255, 0.068);
+}
+
+.banner-container {
+    padding-top: 55px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-position: center;
-}
-
-.circle-bg {
+    max-width: 550px;
     position: relative;
-    /* top: 100%; */
-    left: 37%;
-    transform: translate(-0%, 10%);
+    left: 355px;
+    top: 50px;
 }
 
-.microphone-img {
-    position: inherit;
-    left: 37%;
-    transform: translate(-28%, -125%);
-}
-
-
-.hero-img {
+.banner-microphone {
     position: relative;
+    left: 120px;
+    bottom: 270px;
 }
 
-.new-btn {
-    position: inherit;
-    color: black;
+.banner-badge p {
+    color: #1A0B2E;
     background-color: #00FF88;
-    border: none;
-    border-radius: 8px;
-    padding: 5px 14px;
-    transform: translate(258%, -670%);
-}
-
-.header-text {
-    position: inherit;
+    box-shadow: 0 3px 27px 0px #00ff8893;
+    padding: 8px 20px;
+    width: 70px;
     text-align: center;
-    transform: translate(8%, -80%);
-    right: 560px;
+    border-radius: 1000px;
 }
 
-.header-text h1 {
-    font-size: 60px;
-    font-weight: bolder;
+.banner-badge {
+    width: 105px;
+    position: relative;
+    left: 260px;
+    bottom: 500px;
 }
 
-.header-text p {
-    opacity: 0.7;
+.banner-circle {
+    max-width: 350px;
+    max-height: 450px;
 }
 
-.header-text div {
-    position: inherit;
-    left: 440px;
-    top: 40px;
+.banner-title {
+    font-weight: 800;
+    font-size: 3.75rem;
+    color: #ffffff;
+    margin-bottom: 8px;
 }
+
+.banner-des {
+    font-weight: 400;
+    font-size: 1rem;
+    color: #ffffffa2;
+    padding-bottom: 20px;
+}
+
+.banner-button {
+    display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 50px;
+}
+
+.btn-secondary:hover {
+    transform: scale(20deg)
+}
+
+.btn-secondary {
+    transition: 100ms;
+    cursor: pointer;
+    padding: 12px 0px;
+    border: 2px solid #00FF88;
+    border-radius: 10000px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #00FF88;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+
+
+.featured-section iframe {
+    width: 260px;
+    height: 120px;
+}
+
+.iframe-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+}
+
+
+
+
 
 /* card-choose section  */
 
@@ -244,8 +279,7 @@ nav .nav-list li a {
 
 
     /* shared style  */
-    .card-choose,
-    .iframe-card {
+    .card-choose {
         grid-template-columns: 1fr;
     }
 
@@ -305,7 +339,7 @@ nav .nav-list li a {
 
 
     /* header section responsive  */
-
+    /* 
     #banner {
         background-size: cover;
         background-position: center;
@@ -325,16 +359,36 @@ nav .nav-list li a {
     .new-btn {
         transform: translate(120%, -340%);
     }
-
-    /* .new-btn {
-        padding: 5px 14px;
-        transform: translate(258%, -670%);
-    } */
-
     .header-text div {
         gap: 5px;
     }
 
+    .header-text {
+        transform: translate(260%, -40%);
+        right: 560px;
+    }
+
+    .header-btn {
+        transform: translate(-2460%, -40%);
+        right: 560px;
+        padding: 10px;
+    }
+
+    .header-btn button {
+        padding: 5px 40px;
+    } */
+
+    /* banner section */
+
+    /* .banner-container {
+        text-align: center;
+    }
+
+    .banner-microphone {
+        position: relative;
+        left: 0px;
+        bottom: 270px;
+    } */
 
     /* card section  */
     .card-choose {
@@ -342,21 +396,31 @@ nav .nav-list li a {
         padding: 0 30px;
     }
 
+    .banner-container {
+        position: relative;
+        left: 0px;
+        top: 50px;
+    }
+
+    .banner-microphone {
+        left: 0px;
+        right: 300px;
+        bottom: 270px;
+    }
+
     /* iframe section responsive  */
     .featured-section {
         padding: 30px;
     }
-    .iframe-time{
-        display: flex ;
-    }
+
     .iframe-card .card-bg iframe {
         width: 100%;
         height: 200px;
 
     }
 
-    .featured-section div {
-        flex-direction: column;
+    .iframe-card {
+        grid-template-columns: repeat(1, 1fr);
     }
 
     /* host section  */
