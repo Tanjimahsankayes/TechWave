@@ -72,31 +72,37 @@ nav .nav-list li a {
 }
 
 /* banner section  */
+
 #banner {
-    background-image: url(../assets/hero-bg.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
+    background: url("../assets/hero-bg.png") no-repeat center / cover;
+
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+    /* position: relative;
     border-top: 2px solid rgba(255, 255, 255, 0.068);
+     /* width: 100%;  */
+}
+
+.banner_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .banner-container {
-    padding-top: 55px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 55px;
     max-width: 550px;
-    position: relative;
-    left: 355px;
-    top: 50px;
+
 }
 
 .banner-microphone {
-    position: relative;
-    left: 120px;
-    bottom: 270px;
+    position: absolute;
 }
+
 
 .banner-badge p {
     color: #1A0B2E;
@@ -110,12 +116,16 @@ nav .nav-list li a {
 
 .banner-badge {
     width: 105px;
-    position: relative;
-    left: 260px;
-    bottom: 500px;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .banner-circle {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     max-width: 350px;
     max-height: 450px;
 }
@@ -402,11 +412,11 @@ nav .nav-list li a {
         top: 50px;
     }
 
-    .banner-microphone {
+    /* .banner-microphone {
         left: 0px;
         right: 300px;
         bottom: 270px;
-    }
+    } */
 
     /* iframe section responsive  */
     .featured-section {
