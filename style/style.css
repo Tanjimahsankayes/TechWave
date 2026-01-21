@@ -282,6 +282,62 @@ nav .nav-list li a {
 }
 
 
+/* animation add */
+
+.banner-badge{
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.banner-badge:hover{
+    transform: translateY(-10px);
+}
+.about-hover{
+    transition: transform 1s ease;
+}
+.about-hover:hover{
+    transform: translateY(-10px);
+}
+
+.card-bg {
+    animation-name: myAnimation;
+    animation-duration: 8s;
+    transition: transform 0.3s ease;
+}
+
+.card-bg:hover{
+    transform: translateY(-10px);
+}
+
+@keyframes myAnimation {
+    0% {
+        background-color: #250D44;
+    }
+
+    25% {
+        background-color: #481a85;
+    }
+
+    50% {
+        background-color: #250D44;
+    }
+
+    100% {
+        background-color: #371e56;
+    }
+}
+
+.social-link .img,
+.social-icon .icons{
+    cursor: pointer;
+    transition: transform 0.6s ease;
+}
+.social-link .img:hover{
+    transform: translateY(-5px);
+}
+.social-icon .icons:hover{
+    transform: translateY(-5px);
+}
+
 /* responsive design  */
 
 
@@ -347,59 +403,6 @@ nav .nav-list li a {
         cursor: pointer;
     }
 
-
-    /* header section responsive  */
-    /* 
-    #banner {
-        background-size: cover;
-        background-position: center;
-        width: 100%;
-    }
-
-    .circle-bg {
-        width: 200px;
-        transform: translate(-20%, 5%);
-    }
-
-    .microphone-img {
-        width: 46px;
-        transform: translate(-0%, -135%);
-    }
-
-    .new-btn {
-        transform: translate(120%, -340%);
-    }
-    .header-text div {
-        gap: 5px;
-    }
-
-    .header-text {
-        transform: translate(260%, -40%);
-        right: 560px;
-    }
-
-    .header-btn {
-        transform: translate(-2460%, -40%);
-        right: 560px;
-        padding: 10px;
-    }
-
-    .header-btn button {
-        padding: 5px 40px;
-    } */
-
-    /* banner section */
-
-    /* .banner-container {
-        text-align: center;
-    }
-
-    .banner-microphone {
-        position: relative;
-        left: 0px;
-        bottom: 270px;
-    } */
-
     /* card section  */
     .card-choose {
         grid-template-rows: 1fr;
@@ -411,12 +414,6 @@ nav .nav-list li a {
         left: 0px;
         top: 50px;
     }
-
-    /* .banner-microphone {
-        left: 0px;
-        right: 300px;
-        bottom: 270px;
-    } */
 
     /* iframe section responsive  */
     .featured-section {
